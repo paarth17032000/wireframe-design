@@ -1,6 +1,54 @@
-.badge{
-    /* margin: 0 5px; */
+.height{
+    height: 270px;
+}
+
+#main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(260px, 1fr));
+    grid-column-gap: 10px;
+    color: white;
+}
+
+#board, #jee, #neet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 200px;
+    border-radius: 22px;
+}
+
+#board{
+    background: linear-gradient(to right, #ffc0cb, #800080);
+}
+
+#jee{
+    background: linear-gradient(to right, #00f260, #0575e6);
+}
+
+#neet{
+    background: linear-gradient(to right, #fc4a1a, #f7b733);
+}
+
+#sub{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(300px, 1fr));
+    grid-column-gap: 10px;
+}
+
+.button{
+    background-color: #34495e;
+    color: white;
+    outline: none;
+    border: 3px solid #34495e;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 20px;
+    transition: all 0.5s ease;
+}
+
+.button:hover{
+    background-color: white;
+    color: #34495e;
 }
 
 @media screen and (max-width: 1200px) {
@@ -12,5 +60,14 @@
 @media screen and (max-width: 982px) {
     #heading{
         font-size: 65px;
+    }
+    .locate{
+        font-size: 14px ;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .locate{
+        font-size: 14px ;
     }
 }
